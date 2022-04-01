@@ -11,6 +11,7 @@ public class RedisClusterDemo {
         //创建对象
         //使用集群中其他端口号也可以
         HostAndPort hostAndPort = new HostAndPort("192.168.140.124", 6379);
+        //HostAndPort hostAndPort = new HostAndPort("192.168.140.124", 6379);
         JedisCluster jedisCluster = new JedisCluster(hostAndPort);
 
         jedisCluster.set("b1","value1");
